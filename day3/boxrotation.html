@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+
+		@-webkit-keyframes moving{
+		from{
+			-webkit-transform:rotate(0deg);
+		}
+		to{
+			-webkit-transform:rotate(360deg);
+		}
+		}
+		@-webkit-keyframes moving1{
+		0%{
+			left:0em;
+			top:10em;
+		}
+		25%{
+			left:40em;
+			top:10em;
+		}
+		
+		50%{
+			top: 40em
+			left:40em;
+		}
+		75%{
+			left:0em;
+			top: 40em;
+		}
+
+		100%{
+			left:0em;
+			top:0em;
+		}
+
+		}
+
+		#cir{
+		position: absolute;
+		border:0.2em purple solid;
+		top: 5em;
+		width: 2em;
+		height: 2em;
+		border-radius: 70em;
+			-webkit-animation-name:moving1;
+			-webkit-animation-duration:1s;
+			-webkit-animation-iteration-count:10;		
+		}
+
+
+		#container{
+		position: relative;
+		border:0.2em purple solid;
+		top: 8.5em;
+		left: 6em;
+		width: 30em;
+		height: 15em;
+		border-radius: 10em;
+		background-image: url(C:\Users\Public\Pictures\Sample Pictures\a.jpg);
+
+		
+		}
+
+		#a,#b,#c{
+			position:absolute;
+			border:0.2em purple solid;
+			width: 3em;
+			height: 4em;
+			-webkit-transition-duration:5s;
+			border-top-left-radius: 2em;
+
+			-webkit-animation-name:moving;
+			-webkit-animation-duration:0.5s;
+			-webkit-animation-iteration-count:infinite;
+
+
+				}
+			#a{
+				top: 5em;
+				left: 4em;
+				background-color: red;
+			}
+
+			#b{
+				top: 5em;
+				left: 14em;
+				background-color: pink;
+			}
+
+			#c{
+				top: 5em;
+				left: 23em;
+				background-color: green;
+			}
+
+			#a:hover{
+				-webkit-transform: rotateX(160deg);
+		
+				
+			}
+			#b:hover{
+				-webkit-transform: rotateY(-160deg);
+				
+			}
+			#c:hover{
+				-webkit-transform: rotateZ(360deg);
+		
+
+			}
+
+	</style>
+
+</head>
+<body>
+<section id="cir"></section>
+<section id="container">
+	<section id="a" >
+		
+	</section>
+	
+	<section id="b" > 
+		
+	</section>
+	
+	<section id="c">
+		
+	</section>
+</section>
+</body>
+</html>

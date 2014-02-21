@@ -1,0 +1,12 @@
+#menu, #content, #footer {
+  margin-left: 10%;
+  -webkit-border-radius: 0.1em;
+  -moz-border-radius: 0.1em;
+  -ms-border-radius: 0.1em;
+  -o-border-radius: 0.1em;
+  border-radius: 0.1em;
+  border: solid red;
+  width: 70%; }
+
+#content {
+  height: 100em; }

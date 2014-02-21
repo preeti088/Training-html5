@@ -1,0 +1,12 @@
+@import "_acc";
+
+#menu,#content,#footer{
+	margin-left:10%;
+	@include border-radius(0.1em);
+	border:solid red;
+	width:70%;
+}
+
+#content{
+height: 100em;	
+}
